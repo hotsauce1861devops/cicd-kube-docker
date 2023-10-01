@@ -1,11 +1,15 @@
 pipeline {
 
     agent any
-/*
-	tools {
-        maven "maven3"
-    }
-*/
+
+     tools{
+
+        maven "MAVEN3"
+
+        jdk "OracleJDK11"
+
+     }
+
     environment {
         registry = "hotsauce186/vprofileappdock"
         resgistryCredential = 'Dockerhub'       
